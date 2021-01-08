@@ -17,7 +17,7 @@
 }
 
 .main-header a {
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 .home-link {
@@ -30,7 +30,7 @@
     display: flex;
 }
 
-.nav-link a{
+.nav-link a {
     padding: 1rem;
     font-weight: 100;
     color: #212121;
@@ -51,7 +51,7 @@
 }
 
 .intro-headline {
-    display:flex;
+    display: flex;
     margin: 20px 0;
 }
 
@@ -61,14 +61,14 @@
     text-align: left;
     line-height: 74px;
     letter-spacing: 0.2em;
-    padding:80px 40px 0 32px;
+    padding: 80px 40px 0 32px;
 }
 
 #text1 {
     color: #2B1F65;
 }
 
-#text1::after{
+#text1::after {
     content: "\a";
     white-space: pre;
 }
@@ -78,7 +78,7 @@
 }
 
 #text3 {
-    color:#594CF9;
+    color: #594CF9;
     font-style: italic;
     padding: 0 0 0 10px;
 }
@@ -93,7 +93,7 @@
 .intro-body {
     margin: 20px auto;
     max-width: 750px;
-    padding:0 32px
+    padding: 0 32px
 }
 
 .break-line {
@@ -106,15 +106,15 @@
 .experience {
     margin: 20px auto;
     max-width: 750px;
-    padding:0 32px;
-    display: flex; 
+    padding: 0 32px;
+    display: flex;
 }
 
 .education {
     margin: 20px auto;
     max-width: 750px;
-    padding:0 32px;
-    display: flex; 
+    padding: 0 32px;
+    display: flex;
 }
 
 .download {
@@ -137,7 +137,7 @@
     width: 150px;
 }
 
-.record-list ul{
+.record-list ul {
     padding: 0 0 0 50px;
     list-style-type: none;
 }
@@ -177,7 +177,7 @@
 }
 
 .motto {
-    padding:150px 32px 20px 32px;
+    padding: 150px 32px 20px 32px;
     height: 400px;
 }
 
@@ -197,21 +197,26 @@
 
 .work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
     grid-gap: 1em;
     margin: 0 5%;
+    /* max-width: 100%; */
+    /* margin: 0 auto; */
+    /* grid-gap: 1rem; */
 }
 
-.cards {
+/* .cards {
     max-width: 100%;
-}
+} */
 
 .card_image {
     overflow: hidden;
 }
 
 .work-grid img {
-    position: relative;
+    /* position: relative; */
     max-width: 100%;
     transition: transform 0.5s;
 }
