@@ -1,257 +1,262 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
-* {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    color: #212121;
-    margin: 0;
-    padding: 0;
-}
-
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 32px;
-    height: 100px;
-}
-
-.main-header a {
-    text-decoration: none;
-}
-
-.home-link {
-    text-align: left;
-    font-weight: 900;
-    letter-spacing: 3px;
-}
-
-.nav-link {
-    display: flex;
-}
-
-.nav-link a {
-    padding: 1rem;
-    font-weight: 100;
-    color: #212121;
-    display: block;
-}
-
-.nav-link a:hover {
-    color: #594CF9;
-}
-
-.content-section {
-    margin: 1em;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.intro-headline {
-    display: flex;
-    margin: 20px 0;
-}
-
-.headline-text {
-    font-weight: 500;
-    font-size: 40px;
-    text-align: left;
-    line-height: 74px;
-    letter-spacing: 0.2em;
-    padding: 80px 40px 0 32px;
-}
-
-#text1 {
-    color: #2B1F65;
-}
-
-#text1::after {
-    content: "\a";
-    white-space: pre;
-}
-
-#text2 {
-    color: #2B1F65;
-}
-
-#text3 {
-    color: #594CF9;
-    font-style: italic;
-    padding: 0 0 0 10px;
-}
-
-.headline-img {
-    align-items: right;
-    width: 500px;
-    height: 500px;
-    margin: 20px;
-}
-
-.intro-body {
-    margin: 20px auto;
-    max-width: 750px;
-    padding: 0 32px
-}
-
-.break-line {
-    border: 1px solid #C4C4C4;
-    display: block;
-    max-width: 900px;
-    margin: 70px auto;
-}
-
-.experience {
-    margin: 20px auto;
-    max-width: 750px;
-    padding: 0 32px;
-    display: flex;
-}
-
-.education {
-    margin: 20px auto;
-    max-width: 750px;
-    padding: 0 32px;
-    display: flex;
-}
-
-.download {
-    margin: 30px 0;
-    padding: 0 0 0 50px;
-    display: flex;
-}
-
-.text-btn {
-    font-weight: 900;
-    color: #594CF9;
-    padding: 10px 0 0 10px;
-}
-
-.download-icon {
-    width: 40px;
-}
-
-.record-title h2 {
-    width: 150px;
-}
-
-.record-list ul {
-    padding: 0 0 0 50px;
-    list-style-type: none;
-}
-
-.main-footer {
-    height: 200px;
-    padding: 40px 32px;
-    background-color: #102535;
-}
-
-.footer-title {
-    text-align: left;
-    font-weight: 300;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    color: #AAA2FD;
-    padding: 20px 0 10px 0;
-}
-
-.foot-links {
-    align-items: center;
-    padding: 10px 0 20px 0;
-}
-
-.footer li {
-    display: inline;
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
-    padding: 0 30px 0 0;
-}
-
-.footer a:hover {
-    font-weight: bolder;
-}
-
-.motto {
-    padding: 150px 32px 20px 32px;
-    height: 400px;
-}
-
-.motto-text {
-    margin: 0 0 5px 0;
-    font-size: 48px;
-    letter-spacing: 0.1em;
-}
-
-#motto12 {
-    color: #AAA2FD;
-}
-
-#motto22 {
-    color: #594CF9;
-}
-
-.work-flex {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.work-flex>.cards {
-    /* flex: 1 1 auto; */
-    /* flex-basis: 50%; */
-    max-width: 45%;
-    /* flex: 1; */
-    /* To make the transition work nicely. (Transitions to/from
-                        "width:auto" are buggy in Gecko and Webkit, at least.
-                        See http://bugzil.la/731886 for more info.) */
-    transition: width 0.7s ease-out;
-}
-
-@media all and (max-width: 560px) {
-    .work-flex>li {
-        /* flex-basis: 100%; */
-        max-width: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+    * {
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        color: #212121;
+        margin: 0;
+        padding: 0;
     }
-    /* .search {
-        order: 1;
-    } */
-}
-
-.card_image {
-    overflow: hidden;
-}
-
-.work-flex img {
-    /* position: relative; */
-    max-width: 100%;
-    transition: transform 0.5s;
-}
-
-.work-flex img:hover {
-    transform: scale(1.2);
-    opacity: 0.5;
-}
-
-.card_title {
-    margin: 10px 0 5px 0;
-}
-
-.card_title p {
-    font-size: 16px;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.card_description {
-    margin: 0 0 20px 0;
-}
-
-.card_description p {
-    font-size: 16px;
-    font-weight: 100;
-}
+    
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 32px;
+        height: 100px;
+    }
+    
+    .main-header a {
+        text-decoration: none;
+    }
+    
+    .home-link {
+        text-align: left;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
+    
+    .nav-link {
+        display: flex;
+    }
+    
+    .nav-link a {
+        padding: 1rem;
+        font-weight: 100;
+        color: #212121;
+        display: block;
+    }
+    
+    .nav-link a:hover {
+        color: #594CF9;
+    }
+    
+    .content-section {
+        margin: 1em;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .intro-headline {
+        display: flex;
+        margin: 20px 0;
+    }
+    
+    .headline-text {
+        font-weight: 500;
+        font-size: 40px;
+        text-align: left;
+        line-height: 74px;
+        letter-spacing: 0.2em;
+        padding: 80px 40px 0 32px;
+    }
+    
+    #text1 {
+        color: #2B1F65;
+    }
+    
+    #text1::after {
+        content: "\a";
+        white-space: pre;
+    }
+    
+    #text2 {
+        color: #2B1F65;
+    }
+    
+    #text3 {
+        color: #594CF9;
+        font-style: italic;
+        padding: 0 0 0 10px;
+    }
+    
+    .headline-img {
+        align-items: right;
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+    }
+    
+    .intro-body {
+        margin: 20px auto;
+        max-width: 750px;
+        padding: 0 32px
+    }
+    
+    .break-line {
+        border: 1px solid #C4C4C4;
+        display: block;
+        max-width: 900px;
+        margin: 70px auto;
+    }
+    
+    .experience {
+        margin: 20px auto;
+        max-width: 750px;
+        padding: 0 32px;
+        display: flex;
+    }
+    
+    .education {
+        margin: 20px auto;
+        max-width: 750px;
+        padding: 0 32px;
+        display: flex;
+    }
+    
+    .download {
+        margin: 30px 0;
+        padding: 0 0 0 50px;
+        display: flex;
+    }
+    
+    .text-btn {
+        font-weight: 900;
+        color: #594CF9;
+        padding: 10px 0 0 10px;
+    }
+    
+    .download-icon {
+        width: 40px;
+    }
+    
+    .record-title h2 {
+        width: 150px;
+    }
+    
+    .record-list ul {
+        padding: 0 0 0 50px;
+        list-style-type: none;
+    }
+    
+    .main-footer {
+        height: 200px;
+        padding: 40px 32px;
+        background-color: #102535;
+    }
+    
+    .footer-title {
+        text-align: left;
+        font-weight: 300;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        color: #AAA2FD;
+        padding: 20px 0 10px 0;
+    }
+    
+    .foot-links {
+        align-items: center;
+        padding: 10px 0 20px 0;
+    }
+    
+    .footer li {
+        display: inline;
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: white;
+        padding: 0 30px 0 0;
+    }
+    
+    .footer a:hover {
+        font-weight: bolder;
+    }
+    
+    .motto {
+        padding: 150px 32px 20px 32px;
+        height: 400px;
+    }
+    
+    .motto-text {
+        margin: 0 0 5px 0;
+        font-size: 48px;
+        letter-spacing: 0.1em;
+    }
+    
+    #motto12 {
+        color: #AAA2FD;
+    }
+    
+    #motto22 {
+        color: #594CF9;
+    }
+    
+    @media all and (max-width: 560px) {
+        #motto12,
+        #motto22 {
+            font-size: 24px;
+        }
+        .motto-text {
+            font-size: 24px;
+        }
+        .motto {
+            padding: 30px 32px 30px 32px;
+            height: auto;
+        }
+        /* remove height: 400pt, and reduce padding-top to 30px, add padding-bottom to 10px */
+    }
+    
+    .work-flex {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .work-flex>.cards {
+        max-width: 45%;
+        transition: width 0.7s ease-out;
+    }
+    
+    @media all and (max-width: 560px) {
+        .work-flex>li {
+            max-width: 100%;
+        }
+    }
+    
+    .card_image {
+        overflow: hidden;
+    }
+    
+    .work-flex img {
+        /* position: relative; */
+        max-width: 100%;
+        transition: transform 0.5s;
+    }
+    
+    .work-flex img:hover {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    
+    .card_title {
+        margin: 10px 0 5px 0;
+    }
+    
+    .card_title p {
+        font-size: 16px;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .card_description {
+        margin: 0 0 20px 0;
+    }
+    
+    .card_description p {
+        font-size: 16px;
+        font-weight: 100;
+    }
