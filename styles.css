@@ -50,8 +50,11 @@
     }
     
     .intro-headline {
-        display: flex;
-        margin: 20px 0;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* margin: 20px 0; */
     }
     
     .headline-text {
@@ -61,6 +64,7 @@
         line-height: 74px;
         letter-spacing: 0.2em;
         padding: 80px 40px 0 32px;
+        max-width: 45%;
     }
     
     #text1 {
@@ -84,42 +88,85 @@
     
     .headline-img {
         align-items: right;
-        width: 500px;
-        height: 500px;
+        max-width: 45%;
+        /* height: 500px; */
+        /* if height: 500px do not need in desktop or mobile screen, it can be deleted */
         margin: 20px;
+    }
+    
+    .headline-img>img {
+        width: 100%;
+        /* border-radius: 90%; */
+        /* it is optional to make your portrait round in mobile screen. */
+    }
+    
+    @media all and (max-width: 560px) {
+        .headline-img {
+            max-width: 100%;
+        }
+        .headline-text {
+            padding: 0px 40px 0 32px;
+            max-width: 100%;
+            /* when screen width smaller than 560px, .headline-text will expend to all width */
+        }
+        .headline-img>img {
+            width: 100%;
+            border-radius: 90%;
+            /* it is optional to make your portrait round in mobile screen */
+        }
     }
     
     .intro-body {
         margin: 20px auto;
-        max-width: 750px;
-        padding: 0 32px
+        max-width: 960px;
+        padding: 0 32px;
+    }
+    
+    .intro-body>p {
+        padding-bottom: 30px;
     }
     
     .break-line {
         border: 1px solid #C4C4C4;
         display: block;
-        max-width: 900px;
+        max-width: 58%;
         margin: 70px auto;
+    }
+    
+    @media all and (max-width: 560px) {
+        .break-line {
+            max-width: 86%;
+            margin: 46px auto;
+        }
     }
     
     .experience {
         margin: 20px auto;
-        max-width: 750px;
+        max-width: 960px;
         padding: 0 32px;
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
     
     .education {
-        margin: 20px auto;
-        max-width: 750px;
+        margin: 35px auto 20px auto;
+        max-width: 960px;
         padding: 0 32px;
         display: flex;
     }
     
     .download {
-        margin: 30px 0;
-        padding: 0 0 0 50px;
-        display: flex;
+        margin: 20px auto 50px auto;
+        max-width: 750px;
+        padding-left: 225px;
+        display: inline-flex;
+    }
+    
+    @media all and (max-width: 560px) {
+        .download {
+            padding-left: 30px;
+        }
     }
     
     .text-btn {
@@ -139,6 +186,21 @@
     .record-list ul {
         padding: 0 0 0 50px;
         list-style-type: none;
+    }
+    
+    .record-list li {
+        padding-bottom: 5px;
+    }
+    
+    @media all and (max-width: 560px) {
+        .experience,
+        .education {
+            flex-wrap: wrap;
+        }
+        .record-list ul {
+            padding: 10px 0 0 0;
+            list-style-type: none;
+        }
     }
     
     .main-footer {
