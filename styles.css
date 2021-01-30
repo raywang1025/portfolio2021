@@ -326,3 +326,32 @@
         font-size: 16px;
         font-weight: 100;
     }
+    /* test */
+    
+    .transForm {
+        border-radius: 0% !important;
+    }
+    
+    #background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 0, 0, 1);
+        text-align: center;
+        font-size: 36px;
+    }
+    
+    .readyToNone {
+        display: none;
+    }
+    
+    .entranceBtn {
+        border-radius: 90%;
+        width: 300px;
+        height: 300px;
+        background-color: cornflowerblue;
+        border-color: black;
+        font-size: 24px;
+    }

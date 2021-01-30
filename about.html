@@ -24,7 +24,7 @@
                 <span id="text2">I'm </span><span id="text3">Bryant.</span>
             </h1>
             <div class="headline-img">
-                <img src="image/profile.png">
+                <img id="roundForm" onclick="noRound()" src="image/profile.png">
             </div>
         </div>
         <div class="intro-body">
@@ -85,6 +85,10 @@
             <img class="download-icon" src="image/download.png">
             <strong class="text-btn">Download Resume</strong>
         </div>
+        <div id="background">
+            <p>🧞‍♂️NOTE:<br> Toogle the handsome man portrait🧑‍💻 to change border style</p>
+            <button class="entranceBtn" onclick="displayNone()">Into ABOUTpage🏡</button>
+        </div>
     </section>
     <footer class="footer main-footer">
         <h3 class="footer-title">Say Hello.</h3>
@@ -97,5 +101,27 @@
         </div>
     </footer>
 </body>
+<script>
+    function noRound() {
+
+        var test = document.querySelector("#roundForm")
+
+        test.addEventListener("click", turnForm())
+
+        function turnForm() {
+            test.classList.toggle("transForm")
+        }
+    }
+
+    function displayNone() {
+        var disappear = document.querySelector("#background")
+
+        disappear.addEventListener("click", nonenoneDer())
+
+        function nonenoneDer() {
+            disappear.classList.toggle("readyToNone")
+        }
+    }
+</script>
 
 </html>
