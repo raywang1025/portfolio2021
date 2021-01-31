@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bryant Mao</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="initiation()">
     <header class="header main-header">
         <a class="home-link" href="index.html">BRYANT MAO</a>
         <nav class="nav-link">
-            <a href="index.html">Works</a>
-            <a href="about.html">About</a>
-            <a href="https://medium.com/@bryantmao_97569" target="_blank">Thoughts</a>
+            <a href="index.html">Works</div>
+                <a onclick="bodyFadeOut()" href="about.html">About</a>
+            <a onclick="fadeOut()" href="https://medium.com/@bryantmao_97569" target="_blank">Thoughts</a>
         </nav>
     </header>
     <section class="content-section container">
@@ -69,23 +70,92 @@
             </div>
         </div>
     </section>
-    <button role="button">back to top</button>
+    <div class="wrapper-button">
+        <div class="backToTop" onclick="scrollToScreenTop()">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
     <!--should it be inside the section?-->
+    <footer class="footer main-footer">
+        <div class="footer-text">
+            <h3 class="footer-title">Say Hello.</h3>
+        </div>
+        <div class=foot-links>
+            <ul>
+                <li><a href="mailto:bmao.design@gmail.com" target="_blank">bmao.design@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/bryantmao/" target="_blank">Linkedin</a></li>
+                <li><a href="https://medium.com/@bryantmao_97569" target="_blank">Medium</a></li>
+            </ul>
+        </div>
+        <div class="footer-note">
+            <p>Copyright2021@Bryant Mao</p>
+        </div>
+    </footer>
 </body>
-<footer class="footer main-footer">
-    <div class="footer-text">
-        <h3 class="footer-title">Say Hello.</h3>
-    </div>
-    <div class=foot-links>
-        <ul>
-            <li><a href="mailto:bmao.design@gmail.com" target="_blank">bmao.design@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/bryantmao/" target="_blank">Linkedin</a></li>
-            <li><a href="https://medium.com/@bryantmao_97569" target="_blank">Medium</a></li>
-        </ul>
-    </div>
-    <div class="footer-note">
-        <p>Copyright2021@Bryant Mao</p>
-    </div>
-</footer>
+<style>
+    body {
+        transition: 2s;
+    }
+    
+    .backToTop {
+        border-radius: 90%;
+        width: 100px;
+        height: 100px;
+        background-color: #594CF9;
+        border-color: rgba(0, 0, 0, 0);
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    
+    .wrapper-button {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .fadeOut {
+        opacity: 0;
+        /* display: none; */
+    }
+    
+    html {
+        transition: 3s;
+    }
+</style>
+<script>
+    function scrollToScreenTop() {
+        var scroll = document.querySelector(".backToTop")
+
+        scroll.addEventListener("click", smoothScroll())
+
+        function smoothScroll() {
+            window.scrollTo({
+                top: 100,
+                // left: 100,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    function bodyFadeOut() {
+        console.log("1");
+        var bodyClass = document.querySelector("body")
+        console.log("2");
+        bodyClass.classList.add("fadeOut")
+        console.log("3");
+    }
+
+    // function myFunction() {
+    //     console.log("start");
+
+    //     console.log("end");
+    // }
+    // window.onload = function() {
+
+    // }
+
+    function initiation() {
+        document.html.setAttribute("opacity", "1")
+    }
+</script>
 
 </html>
